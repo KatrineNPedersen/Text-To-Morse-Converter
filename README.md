@@ -10,6 +10,7 @@ This is a simple web application developed using Python, Flask, WTForms, and Boo
   - [Links](#links)
 - [My Process](#my-process)
   - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
   - [What I Learned](#what-i-learned)
   - [Continued Development](#continued-development)
 - [Author](#author)
@@ -28,8 +29,8 @@ This is a simple web application developed using Python, Flask, WTForms, and Boo
 
 ### Links
 
-- Solution URL: [https://github.com/KatrineNPedersen/Text-To-Morse-Converter.git]
-- Live Site URL: [https://katrinenpedersen.github.io/Text-To-Morse-Converter]
+- Code URL: [GitHub](https://github.com/KatrineNPedersen/Text-To-Morse-Converter.git)
+- Live Site URL: [Render](https://katrine-pedersen-text-to-morse-converter.onrender.com)
 
 ## My Process
 
@@ -39,6 +40,15 @@ This is a simple web application developed using Python, Flask, WTForms, and Boo
 - Flask: Micro web framework for routing and handling HTTP requests.
 - WTForms: Form validation and rendering library for Flask.
 - Bootstrap: Frontend framework for designing responsive and mobile-first websites.
+
+### Installation
+
+- Clone repository:
+  git clone https://github.com/KatrineNPedersen/Text-To-Morse-Converter.git
+- Navigate to Project Directory:
+  cd Text-To-Morse-Converter
+- Install dependencies:
+  pip install -r requirements.txt
 
 ### What I Learned
 
