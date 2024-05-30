@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/5663f6cdaa.js" crossorigin="anonymous"></script>
+    {{ bootstrap.load_css() }}
+    {% from 'bootstrap5/form.html' import render_form %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Text To Morse Converter</title>
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center flex-column text-center">
+        <div class="emoji"><i class="fa-solid fa-book-open fa-10x"></i></div>
+        <h1 class="display-5 fw-bold text-body-emphasis">CODE <span class="logo-header">CIPHER</span></h1>
+        <h2 class="display-8 fw-bold text-body-emphasis my-3">Text To Morse Converter</h2>
+    <div class="col-lg-6 mx-auto">
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center flex-column">
+          <p>{{text}}</p>
+            {% if is_morse %}
+                <p class="lead mb-4">Converted into Standard Text is:</p>
+            {% else %}
+                <p class="lead mb-4">Converted into Morse Code is:</p>
+            {% endif %}
+          <p>{{translated_text}}</p>
+      </div>
+        <form action="{{url_for('converted_text')}}" method="POST">
+            <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Try Another</button>
+        </form>
+    </div>
+  </div>
+{{ bootstrap.load_js() }}
+</body>
+</html>
